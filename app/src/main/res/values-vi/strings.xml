@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveScore: Football Match Live</string>
+    <string name="nav_live">Trực tiếp</string>
+    <string name="nav_leagues">Giải đấu</string>
+    <string name="nav_news">Tin tức</string>
+    <string name="nav_favorite">Yêu thích</string>
+    <string name="nav_profile">Hồ sơ</string>
+    <string name="wc26">WC26</string>
+    
+    <string name="favorite_title">MỤC YÊU THÍCH</string>
+    <string name="my_follow">THEO DÕI CỦA BẠN</string>
+    <string name="my_matches">TRẬN ĐẤU CỦA BẠN</string>
+    
+    <string name="live">Trực tiếp</string>
+    <string name="upcoming">SẮP ĐẤU</string>
+    <string name="finished">ĐÃ KẾT THÚC</string>
+    
+    <string name="empty_matches">Chưa có trận đấu yêu thích nào</string>
+    <string name="empty_leagues">Chưa có giải đấu yêu thích nào</string>
+    <string name="empty_teams">Chưa có đội bóng yêu thích nào</string>
+    <string name="empty_players">Chưa có cầu thủ yêu thích nào</string>
+    
+    <string name="profile_title">HỒ SƠ CỦA TÔI</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="premium_badge">👑 THÀNH VIÊN PREMIUM</string>
+    <string name="free_plan">GÓI MIỄN PHÍ</string>
+    <string name="daily_limit">Lượt xem API hôm nay</string>
+    <string name="upgrade_button">NÂNG CẤP NGAY</string>
+    <string name="intro_next">Tiếp theo</string>
+    <string name="intro_start">Bắt đầu</string>
+    <string name="intro_step_1_progress">Màn 1: 1/3</string>
+    <string name="intro_step_2_progress">Màn 2: 2/3</string>
+    <string name="intro_step_3_progress">Màn 3: 3/3</string>
+    <string name="intro_step_1_title">CHỌN GIẢI ĐẤU YÊU THÍCH</string>
+    <string name="intro_step_1_subtitle">Lọc tin tức &amp; kết quả các giải đấu bạn quan tâm</string>
+    <string name="intro_step_1_hint">Tìm kiếm giải đấu...</string>
+    <string name="intro_step_2_title">CHỌN ĐỘI BÓNG BẠN THEO DÕI</string>
+    <string name="intro_step_2_subtitle">Chúng tôi sẽ ưu tiên hiển thị câu lạc bộ bạn chọn lên đầu</string>
+    <string name="intro_step_2_hint">Tìm kiếm đội bóng, CLB...</string>
+    <string name="intro_step_3_title">CHỌN CẦU THỦ BẠN YÊU THÍCH</string>
+    <string name="intro_step_3_subtitle">Theo dõi các siêu sao bóng đá hàng đầu thế giới</string>
+    <string name="intro_step_3_hint">Tìm kiếm cầu thủ...</string>
+    <string name="intro_finish">HOÀN TẤT</string>
+    <string name="item_hot"> • Phổ biến 🔥</string>
+    <string name="item_belongs">Thuộc: %1$s</string>
+    <string name="item_nationality">Quốc tịch: %1$s</string>
+    <string name="intro_skip">BỎ QUA</string>
+    <string name="intro_no_results">Không tìm thấy kết quả</string>
+    <string name="welcome_title">WELCOME TO LIVESCORE</string>
+    <string name="choose_language">CHỌN NGÔN NGỮ</string>
+    <string name="choose_language_desc">Lựa chọn ngôn ngữ hiển thị chính thức của ứng dụng để tiếp tục luồng thiết lập cá nhân hóa.</string>
+    <string name="profile_settings">CÀI ĐẶT</string>
+    <string name="profile_display_preferences">GIAO DIỆN &amp; CÁ NHÂN HÓA</string>
+    <string name="profile_system">BỘ NHỚ &amp; HỆ THỐNG</string>
+    <string name="profile_about">THÔNG TIN PHẦN MỀM</string>
+    <string name="profile_version">Phiên bản</string>
+    <string name="language_dialog_title">Chọn ngôn ngữ</string>
+    <string name="language_changed_toast">Đã cập nhật ngôn ngữ thành %1$s</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_app_title">LIVESCORE</string>
+    <string name="splash_subtitle">TRUNG TÂM THỂ THAO CAO CẤP</string>
+    <string name="splash_ads_warning">Hoạt động này có thể chứa quảng cáo</string>
+    
+    <!-- Home Screen -->
+    <string name="tab_matches">Trận đấu</string>
+    <string name="tab_leagues">GIẢI ĐẤU</string>
+    <string name="empty_fixtures">Không tìm thấy trận đấu nào</string>
+    <string name="empty_live_fixtures">Hiện không có trận đấu trực tiếp nào</string>
+    <string name="empty_upcoming_fixtures">Không có trận đấu nào được lên lịch hôm nay</string>
+    <string name="empty_finished_fixtures">Không có trận đấu nào đã kết thúc hôm nay</string>
+    <string name="limit_exceeded_empty_state">Bạn đã sử dụng hết lượt miễn phí hôm nay</string>
+    
+    <!-- League Details -->
+    <string name="tab_standings">BẢNG XẾP HẠNG</string>
+    <string name="tab_fixtures">LỊCH THI ĐẤU</string>
+    <string name="table_header_team">ĐỘI BÓNG</string>
+    <string name="table_header_p">ST</string>
+    <string name="table_header_w">T</string>
+    <string name="table_header_d">H</string>
+    <string name="table_header_l">B</string>
+    <string name="table_header_gd">HS</string>
+    <string name="table_header_pts">PTS</string>
+    
+    <!-- Match Details -->
+    <string name="tab_stats">Thống kê</string>
+    <string name="tab_timeline">Diễn biến</string>
+    <string name="tab_lineups">Đội hình</string>
+    
+    <!-- Search Screen -->
+    <string name="search_input_hint">Tìm kiếm trận, đội, giải đấu...</string>
+    <string name="search_empty_title">Khám phá bóng đá</string>
+    <string name="search_empty_desc">Tìm kiếm các đội bóng, giải đấu hàng đầu như Ngoại hạng Anh, Real Madrid, ĐT Việt Nam hay World Cup 2026...</string>
+    <string name="search_header_matches">Trận đấu</string>
+    <string name="search_header_teams">Đội bóng</string>
+    <string name="search_header_leagues">Giải đấu</string>
+    <string name="search_no_results">Không tìm thấy kết quả</string>
+    <string name="search_no_results_desc">Chúng tôi không tìm thấy kết quả cho \"%1$s\". Hãy thử từ khóa khác!</string>
+    
+    <!-- News Screen -->
+    <string name="news_center_title">TIN NÓNG 24H</string>
+    <string name="news_featured_today">⭐ TIÊU ĐIỂM HÔM NAY</string>
+    <string name="news_1_title">FIFA chính thức công bố lịch thi đấu World Cup 2026 tại Mỹ, Mexico và Canada!</string>
+    <string name="news_1_desc">Trận khai mạc lịch sử sẽ diễn ra tại Sân vận động Azteca danh tiếng của Mexico. New York/New Jersey vinh dự giành quyền đăng cai trận chung kết World Cup lớn nhất lịch sử.</string>
+    <string name="news_1_author">Bởi Ban Biên Tập • 5 phút đọc</string>
+    <string name="news_detail_link">Chi tiết ➔</string>
+    <string name="news_2_title">Arsenal áp đảo Chelsea 5-0 tại Emirates, bứt phá ngoạn mục trên BXH</string>
+    <string name="news_2_desc">Cú đúp của Ben White và Kai Havertz giúp Pháo thủ nhấn chìm đối thủ cùng thành phố và gửi lời tuyên chiến đanh thép tới Man City...</string>
+    <string name="news_2_time">1 giờ trước • 3 phút đọc</string>
+    <string name="news_3_title">Kylian Mbappé đồng ý các thỏa thuận sơ bộ gia nhập Real Madrid</string>
+    <string name="news_3_desc">Mọi thủ tục cá nhân đã hoàn tất. Siêu sao người Pháp sẽ chính thức cập bến Bernabeu theo dạng chuyển nhượng tự do kèm mức lót tay kỷ lục...</string>
+    <string name="news_3_time">3 giờ trước • 4 phút đọc</string>
+    <string name="news_4_title">Kịch bản điên rồ tại Bán kết: Real Madrid ngược dòng thần kỳ hạ Bayern Munich</string>
+    <string name="news_4_desc">Hai bàn thắng chớp nhoáng ở phút bù giờ của Joselu đã làm nổ tung cầu trường Santiago Bernabéu, đưa Kền kền trắng vào chung kết...</string>
+    <string name="news_4_time">Hôm qua • 6 phút đọc</string>
+    
+    <!-- WC26 Screen -->
+    <string name="wc26_days_until">Còn %1$d ngày đến Lễ Khai Mạc</string>
+    <string name="wc26_starts_today">⚽ KHAI MẠC HÔM NAY!</string>
+    <string name="wc26_ongoing">⚽ World Cup 2026 đang diễn ra!</string>
+    <string name="wc26_groups">BẢNG ĐẤU</string>
+    <string name="wc26_teams">ĐỘI TUYỂN</string>
+    <string name="wc26_news">TIN TỨC</string>
+    <string name="wc26_opening_match">Trận Khai Mạc • Lượt 1</string>
+    <string name="wc26_azteca_stadium">Sân Azteca, Mexico City</string>
+    <string name="wc26_metlife_stadium">Sân MetLife, New York</string>
+    <string name="wc26_vs">vs</string>
+    <string name="wc26_round_1_group_a">Lượt 1 • Bảng A</string>
+    <string name="wc26_group_a">BẢNG A</string>
+    <string name="wc26_group_b">BẢNG B</string>
+    <string name="wc26_qualified_teams">ĐỘI TUYỂN ĐÃ VƯỢT QUA VÒNG LOẠI</string>
+    <string name="wc26_exclusive_news">TIN ĐỘC QUYỀN</string>
+    <string name="wc26_exclusive_news_title">Trận chung kết World Cup 2026 sẽ được tổ chức hoành tráng tại New York/New Jersey!</string>
+    <string name="wc26_exclusive_news_desc">FIFA đã chính thức trao quyền đăng cai trận chung kết cho sân vận động MetLife với sức chứa hơn 82,500 chỗ ngồi vào ngày 19/07/2026.</string>
+    <string name="wc26_preparation">CÔNG TÁC CHUẨN BỊ</string>
+    <string name="wc26_prep_title">Mỹ tăng tốc hạ tầng giao thông và an ninh chuẩn bị cho lượng CĐV kỷ lục</string>
+    <string name="wc26_prep_desc">Chính quyền liên bang đã phê duyệt gói ngân sách đặc biệt để nâng cấp các luồng xe điện ngầm và hàng không kết nối trực tiếp các thành phố chủ nhà...</string>
+    <string name="wc26_view_now">XEM NGAY ➔</string>
+    <string name="wc26_general_news">📰 TIN TỨC CHUNG</string>
+    <string name="wc26_general_news_desc">Xem toàn bộ diễn biến thể thao, chuyển nhượng &amp; tin tức giải đấu 24h qua</string>
+    <string name="league_center_title">TRUNG TÂM GIẢI ĐẤU</string>
+    <string name="league_center_subtitle">Bảng xếp hạng &amp; Thống kê toàn cầu</string>
+    <string name="tab_scorers">VUA PHÁ LƯỚI</string>
+    <string name="tab_assists">KIẾN TẠO</string>
+    <string name="share_title">CHIA SẺ TRẬN ĐẤU</string>
+    <string name="share_score_title">Tỉ số &amp; Trạng thái</string>
+    <string name="share_score_desc">Chia sẻ tỉ số thời gian thực và trạng thái trận đấu.</string>
+    <string name="share_stats_title">Thống kê chi tiết</string>
+    <string name="share_stats_desc">Chia sẻ tỷ lệ kiểm soát bóng, số cú sút, phạt góc.</string>
+    <string name="share_full_title">Báo cáo Tổng hợp</string>
+    <string name="share_full_desc">Chia sẻ toàn diện bao gồm cả tỉ số và thống kê.</string>
+    <string name="share_via">Chia sẻ qua</string>
+    <string name="share_copied_toast">Đã sao chép vào bộ nhớ tạm!</string>
+    <string name="reminder_set_toast">Đã bật nhắc nhở trận đấu!</string>
+    <string name="reminder_cancelled_toast">Đã tắt nhắc nhở trận đấu!</string>
+    <string name="share_caption_template">Xem chi tiết thống kê trận %1$s vs %2$s tại livescore://match/%3$d (Tải app tại: https://play.google.com/store/apps/details?id=livescore)</string>
+
+    <!-- WC26 New Multilingual Strings -->
+    <string name="wc_tab_fixtures">TRẬN ĐẤU</string>
+    <string name="wc_tab_groups">BXH</string>
+    <string name="wc_tab_bracket">VLTT</string>
+    <string name="wc_no_data">Không có dữ liệu</string>
+    <string name="wc_tbd">Chưa xác định</string>
+    <string name="wc_group_stage_name">Vòng Bảng</string>
+    <string name="wc_default_stadium">Sân vận động</string>
+    <string name="wc_result_format">%1$s  [ Kết quả: %2$d - %3$d ]</string>
+
+    <!-- Reminder Notification -->
+    <string name="reminder_notification_title">⚽ Trận đấu sắp bắt đầu!</string>
+    <string name="reminder_notification_text">%1$s (%2$s) sẽ khởi tranh sau 5 phút nữa. Đừng bỏ lỡ!</string>
+    <string name="reminder_default_match_title">Trận đấu sắp diễn ra</string>
+    <string name="reminder_default_league_name">Giải đấu</string>
+
+    <!-- Intro Slideshow -->
+    <string name="intro_slide_1_title">Cập nhật tức thời thời gian thực</string>
+    <string name="intro_slide_1_desc">Cập nhật diễn biến bóng đá nhanh nhất hành tinh với dữ liệu chi tiết từng giây, tỉ số trực tiếp &amp; sơ đồ trực quan.</string>
+    <string name="intro_slide_2_title">Chi tiết trận đấu &amp; Bảng xếp hạng</string>
+    <string name="intro_slide_2_desc">Theo dõi vị trí của các câu lạc bộ, bảng xếp hạng cập nhật tức thời và lịch thi đấu trọn vẹn mùa giải 2024-2026.</string>
+    <string name="intro_slide_3_title">Tất cả các giải đấu &amp; Giải vô địch</string>
+    <string name="intro_slide_3_desc">Nhận cảnh báo thông báo thông minh trước giờ bóng lăn 5 phút để bạn không bỏ lỡ bất kỳ khoảnh khắc ghi bàn nào.</string>
+    <string name="intro_slide_4_title">🏆 Bảng xếp hạng các giải đấu</string>
+    <string name="intro_slide_4_desc">Đón đầu lễ hội bóng đá đỉnh cao với bảng đấu, tin tức &amp; đếm ngược sự kiện tại Mỹ, Canada &amp; Mexico.</string>
+
+    <!-- Permissions -->
+    <string name="permission_title">Bật Thông Báo</string>
+    <string name="permission_desc">Để không bỏ lỡ các trận đấu hấp dẫn, vui lòng cấp quyền gửi thông báo cho ứng dụng.</string>
+    <string name="permission_allow">Cấp Quyền</string>
+    <string name="permission_skip">Bỏ qua</string>
+
+    <!-- Date Picker / Calendar -->
+    <string name="select_match_date">Chọn ngày thi đấu</string>
+    <string name="today">Hôm nay</string>
+    <string name="no_live_matches">Hiện tại không có trận đấu trực tiếp nào</string>
+
+    <!-- Favorites / List Headers -->
+    <string name="club">Câu lạc bộ</string>
+    <string name="league_with_country">Giải đấu • %1$s</string>
+    <string name="no_favorite_matches">Chưa có trận đấu yêu thích nào</string>
+    <string name="no_favorites_found">Chưa có mục yêu thích nào</string>
+
+    <!-- Timeline Legend -->
+    <string name="legend_goal">Bàn thắng</string>
+    <string name="legend_yellow_card">Thẻ vàng</string>
+    <string name="legend_red_card">Thẻ đỏ</string>
+    <string name="legend_subst">Thay người</string>
+    <!-- IAP Paywall -->
+    <string name="iap_skip">BỎ QUA</string>
+    <string name="iap_upgrade_title">⚡ NÂNG CẤP VIP PREMIUM</string>
+    <string name="iap_upgrade_subtitle">Trải nghiệm bóng đá đỉnh cao không giới hạn</string>
+    <string name="iap_out_of_quota_title">⚠️ HẾT LƯỢT MIỄN PHÍ HÔM NAY</string>
+    <string name="iap_out_of_quota_subtitle">Bạn đã sử dụng hết 20 lượt truy cập miễn phí trong ngày hôm nay. Hãy nâng cấp lên Premium để tiếp tục trải nghiệm không giới hạn!</string>
+    <string name="iap_feature_1">Cập nhật trực tiếp mỗi 15 giây</string>
+    <string name="iap_feature_2">Yêu thích không giới hạn</string>
+    <string name="iap_feature_3">Không quảng cáo, vĩnh viễn</string>
+    <string name="iap_feature_4">Thống kê &amp; phân tích cao cấp</string>
+    <string name="iap_feature_5">Dự đoán tỷ số trận đấu bằng AI</string>
+    <string name="iap_weekly_vip">1 Tuần VIP</string>
+    <string name="iap_monthly_vip">1 Tháng VIP</string>
+    <string name="iap_pay_weekly">Thanh toán mỗi tuần</string>
+    <string name="iap_save_monthly">Tiết kiệm ~30\% 🔥</string>
+    <string name="iap_weekly_premium">Premium Hàng Tuần</string>
+    <string name="iap_only_price">chỉ 5.99$/tháng</string>
+    <string name="iap_save_badge">Tiết kiệm 30%</string>
+    <string name="iap_cancel_anytime">$1.99/tuần. Hủy bất kỳ lúc nào</string>
+    <string name="iap_cancel_anytime_monthly">$5.99/tháng. Hủy bất kỳ lúc nào</string>
+    <string name="iap_btn_continue">Tiếp tục</string>
+    <string name="iap_btn_subscribe">Đăng ký ngay</string>
+    <string name="iap_toast_mock_success">Chúc mừng! Bạn đã dùng thử Premium thành công (Mock Billing). 🎉</string>
+    <string name="iap_btn_connecting_mock">Đang kết nối Mock Billing...</string>
+    <string name="iap_terms_of_service">Điều khoản sử dụng</string>
+    <string name="iap_terms_of_service_toast">Điều khoản sử dụng: Dịch vụ Premium Auto-renewable.</string>
+    <string name="iap_privacy_policy">Chính sách bảo mật</string>
+    <string name="iap_privacy_policy_toast">Chính sách bảo mật: Dữ liệu thanh toán của bạn hoàn toàn bảo mật.</string>
+    <string name="iap_toast_google_play_error">Lỗi khi kết nối Google Play: %1$s</string>
+    <string name="iap_vip_button_label">VIP ⚡</string>
+    <string name="btn_discover">KHÁM PHÁ</string>
+
+    <!-- AI Prediction Paywall Dialog -->
+    <string name="dialog_ai_title">Xem dự đoán từ AI</string>
+    <string name="dialog_ai_subtitle">Mở khóa dự đoán tỷ số chi tiết trước khi trận đấu bắt đầu.</string>
+    <string name="dialog_ai_feature_1_title">Dự đoán tỷ số chung cuộc</string>
+    <string name="dialog_ai_feature_1_desc">Xem tỷ số chính xác mà AI dự đoán</string>
+    <string name="dialog_ai_feature_2_title">Xác suất chiến thắng</string>
+    <string name="dialog_ai_feature_2_desc">Phân tích xác suất Thắng / Hòa / Thua</string>
+    <string name="dialog_ai_feature_3_title">Mức độ tin cậy</string>
+    <string name="dialog_ai_feature_3_desc">Đánh giá độ tin cậy của AI cho mỗi dự đoán</string>
+    <string name="dialog_ai_btn_later">Để sau</string>
+    <string name="dialog_ai_btn_go_premium">Nâng cấp Premium</string>
+
+    <!-- New Permission Screen Strings -->
+    <string name="permission_main_title">Cấp quyền truy cập</string>
+    <string name="permission_main_subtitle">Không bỏ lỡ bất kỳ trận đấu yêu thích nào</string>
+    <string name="permission_section_title">QUYỀN TRUY CẬP</string>
+    <string name="permission_push_title">Thông báo đẩy</string>
+    <string name="permission_push_desc">Cho phép thông báo để nhận lời nhắc và cập nhật trực tiếp</string>
+    <string name="permission_footer_desc">Các quyền truy cập này giúp chúng tôi mang lại trải nghiệm tốt nhất.</string>
+    <string name="permission_confirm">Xác nhận</string>
+
+    <!-- Extracted Layout & Code Strings -->
+    <string name="leagues_header_title">Giải Đấu</string>
+    <string name="leagues_header_desc">Bảng xếp hạng &amp; Danh sách vua phá lưới thời gian thực</string>
+    <string name="leagues_col_rank">#</string>
+    <string name="toast_share_match_failed">Chia sẻ thông tin trận đấu thất bại</string>
+    <string name="toast_select_language_continue">Vui lòng chọn ngôn ngữ để tiếp tục</string>
+    <string name="toast_language_switched_vi">Đã chuyển đổi sang Tiếng Việt</string>
+    <string name="toast_language_switched_en">Switched to English</string>
+
+    <!-- Match Detail Stats, Radar & Top Players -->
+    <string name="assists_label">KIẾN TẠO</string>
+    <string name="goals_label">BÀN THẮNG</string>
+    <string name="realtime_match_radar">RADAR TRẬN ĐẤU THỜI GIAN THỰC</string>
+    <string name="attack_momentum_pressure">ÁP LỰC THỜI ĐIỂM TẤN CÔNG</string>
+    <string name="home_label">SÂN NHÀ</string>
+    <string name="away_label">SÂN KHÁCH</string>
+    <string name="match_statistics">THỐNG KÊ TRẬN ĐẤU</string>
+    <string name="ball_possession">Kiểm soát bóng</string>
+    <string name="total_shots">Tổng cú sút</string>
+    <string name="shots_on_target">Sút trúng đích</string>
+    <string name="corner_kicks">Phạt góc</string>
+    <string name="stat_fouls">Phạm lỗi</string>
+    <string name="stat_yellow_cards">Thẻ vàng</string>
+    <string name="stat_red_cards">Thẻ đỏ</string>
+    <string name="stat_goalkeeper_saves">Cứu thua</string>
+    <string name="stat_total_passes">Tổng đường chuyền</string>
+    <string name="stat_shots_off_target">Sút ra ngoài</string>
+    <string name="stat_blocked_shots">Cú sút bị cản phá</string>
+    <string name="stat_shots_inside_box">Sút trong vòng cấm</string>
+    <string name="stat_shots_outside_box">Sút ngoài vòng cấm</string>
+    <string name="stat_offsides">Việt vị</string>
+    <string name="stat_passes_accurate">Đường chuyền chính xác</string>
+
+    <!-- Premium Permission Mockup Screen -->
+    <string name="permission_mockup_title">🔔 Không bỏ lỡ bàn thắng nào!</string>
+    <string name="permission_mockup_desc">Nhận thông báo khi các trận đấu yêu thích của bạn khởi tranh và mỗi khi có bàn thắng được ghi trực tiếp. Luôn kết nối với mọi khoảnh khắc thú vị.</string>
+    <string name="permission_card_reminder_title">⏰ Nhắc nhở giờ đấu</string>
+    <string name="permission_card_reminder_desc">Nhận thông báo trước khi các trận đấu bạn đã chọn bắt đầu.</string>
+    <string name="permission_card_goal_title">⚽ Cảnh báo bàn thắng trực tiếp</string>
+    <string name="permission_card_goal_desc">Nhận cập nhật tức thời bất cứ khi nào có bàn thắng được ghi.</string>
+    <string name="permission_btn_continue">Tiếp tục</string>
+    <string name="permission_btn_skip">Bỏ qua</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_confirm_title">Thoát ứng dụng</string>
+    <string name="exit_confirm_desc">Bạn có chắc chắn muốn thoát ứng dụng không?</string>
+    <string name="exit_confirm_cancel">Hủy</string>
+    <string name="exit_confirm_exit">Thoát</string>
+
+    <!-- AI Prediction Feature -->
+    <string name="tab_match">Trận đấu</string>
+    <string name="tab_prediction">Siêu máy tính</string>
+    <string name="prediction_locked_title">NHẬN ĐỊNH AI VIP</string>
+    <string name="prediction_locked_desc">Mở khóa Premium để theo dõi nhận định trận đấu chi tiết từ AI, tỷ lệ chiến thắng, gợi ý kèo phụ và sơ đồ chiến thuật tối ưu.</string>
+    <string name="ai_win_probability">XÁC SUẤT CHIẾN THẮNG</string>
+    <string name="ai_score_prediction">Tỉ số dự đoán: %1$d - %2$d</string>
+    <string name="ai_confidence_score">Độ tin cậy: %1$d%%</string>
+    <string name="ai_over_under">Kèo Tài/Xỉu: %1$s</string>
+    <string name="ai_btts">Hai đội ghi bàn: %1$s</string>
+    <string name="ai_yes">Có</string>
+    <string name="ai_no">Không</string>
+    <string name="ai_predicted_goalscorers">CẦU THỦ DỰ KIẾN GHI BÀN</string>
+    <string name="ai_general_analysis">NHẬN ĐỊNH CHUNG</string>
+    <string name="ai_tactical_breakdown">PHÂN TÍCH CHIẾN THUẬT</string>
+    <string name="ai_home_setup">Sơ đồ Đội nhà</string>
+    <string name="ai_away_setup">Sơ đồ Đội khách</string>
+    <string name="ai_victory_keys">CHÌA KHÓA CHIẾN THẮNG</string>
+    <string name="ai_key_battle">ĐỐI ĐẦU THEN CHỐT</string>
+    <string name="ai_upgrade_now">Nâng cấp ngay</string>
+    <string name="ai_squad_impact">LỰC LƯỢNG</string>
+    <string name="ai_strengths_weaknesses">ĐIỂM MẠNH &amp; ĐIỂM YẾU</string>
+    <string name="ai_key_predictions">THÔNG SỐ DỰ ĐOÁN</string>
+    <string name="ai_corners">PHẠT GÓC</string>
+    <string name="ai_yellow_cards">THẺ VÀNG</string>
+    <string name="ai_key_stats">THÔNG TIN CHI TIẾT</string>
+    <string name="ai_home_badge">NHÀ</string>
+    <string name="ai_away_badge">KHÁCH</string>
+    <string name="lock_overlay_title">MỞ KHÓA PREMIUM</string>
+    <string name="lock_overlay_desc">Tính năng này yêu cầu Premium. Hãy nâng cấp để theo dõi bản đồ radar, xu hướng tấn công &amp; số liệu thống kê thời gian thực không giới hạn!</string>
+    <string name="lock_overlay_button">Nâng cấp ngay</string>
+    <string name="over_under">Tài / Xỉu</string>
+    <string name="btts_header">Cả hai đội ghi bàn</string>
+    <string name="news_tag_world_cup">WORLD CUP 2026</string>
+    <string name="news_tag_premier_league">NGOẠI HẠNG ANH</string>
+    <string name="news_tag_transfers">CHUYỂN NHƯỢNG</string>
+    <string name="news_tag_champions_league">CHAMPIONS LEAGUE</string>
+    <string name="title_winner_prediction">Kết Quả Dự Kiến</string>
+    <string name="title_score_prediction">Tỷ Số Dự Kiến</string>
+    <string name="title_confidence_score">Độ Tin Cậy AI</string>
+    <string name="title_over_under_prediction">Dự Đoán Tài/Xỉu</string>
+    <string name="title_btts_prediction">Hai Đội Ghi Bàn</string>
+    <string name="title_corners_prediction">Phạt Góc Dự Kiến</string>
+    <string name="title_yellow_cards_prediction">Thẻ Phạt Dự Kiến</string>
+    <string name="title_tactical_analysis">Phân Tích Chiến Thuật</string>
+    <string name="title_strengths_weaknesses">Điểm Mạnh &amp; Điểm Yếu</string>
+    <string name="title_form_overview">Nhận Định Phong Độ</string>
+    <string name="title_squad_impact">Tác Động Lực Lượng</string>
+    <string name="title_prominent_players">Cầu Thủ Nổi Bật</string>
+    <string name="title_key_stats">Thống Kê Quan Trọng</string>
+    <string name="read_more">Xem thêm</string>
+    <string name="title_key_predictions">Thông Số Dự Đoán</string>
+    <string name="btn_score_prediction">DỰ ĐOÁN TỶ SỐ</string>
+    <string name="supercomputer_prediction">Dự đoán của Siêu máy tính</string>
+
+    <!-- News & Team Fixtures -->
+    <string name="news_category_all">Tất cả</string>
+    <string name="news_category_transfers">Chuyển nhượng</string>
+    <string name="news_category_world_cup">World Cup</string>
+    <string name="news_category_premier_league">Ngoại Hạng Anh</string>
+    <string name="news_category_champions_league">Cúp C1</string>
+    <string name="news_no_data">Không có tin tức nào</string>
+    <string name="news_no_data_category">Không có tin tức cho danh mục này.</string>
+    <string name="news_share_title">Chia sẻ bài viết</string>
+    <string name="team_fixtures_title">Lịch Sử Trận Đấu</string>
+    <string name="team_fixtures_filter_last_5">5 trận gần nhất</string>
+    <string name="team_fixtures_filter_last_10">10 trận gần nhất</string>
+    <string name="team_fixtures_filter_last_15">15 trận gần nhất</string>
+    <string name="team_fixtures_filter_last_20">20 trận gần nhất</string>
+    <string name="team_fixtures_wins">Thắng</string>
+    <string name="team_fixtures_draws">Hòa</string>
+    <string name="team_fixtures_losses">Thua</string>
+    <string name="team_fixtures_no_data">Không có lịch sử trận đấu cho đội bóng này.</string>
+    <string name="team_fixtures_invalid_id">ID đội bóng không hợp lệ</string>
+    <string name="btn_retry">Thử lại</string>
+
+    <string name="home_header_live">"TRỰC TIẾP "</string>
+    <string name="home_header_score">"TỶ SỐ "</string>
+    <string name="home_header_slogan">"Bóng đá • Nhanh hơn • Gần hơn "</string>
+    <string name="empty_live_title">Hiện không có trận đấu nào</string>
+    <string name="empty_live_desc">Hiện tại không có trận đấu trực tiếp nào. Hãy kiểm tra các trận sắp tới hoặc xem thêm các giải đấu khác.</string>
+    <string name="empty_upcoming_title">Không có trận đấu sắp tới</string>
+    <string name="empty_upcoming_desc">Không có trận đấu nào được lên lịch cho hôm nay. Hãy chọn ngày khác hoặc xem các giải đấu khác.</string>
+    <string name="empty_finished_title">Không có trận đấu đã kết thúc</string>
+    <string name="empty_finished_desc">Không có trận đấu nào kết thúc trong hôm nay. Hãy xem lại các ngày trước hoặc các giải đấu khác.</string>
+    <string name="empty_general_title">Không tìm thấy trận đấu</string>
+    <string name="empty_general_desc">Hiện tại không có trận đấu nào.</string>
+    <string name="iap_restore_purchase">Khôi phục gói mua</string>
+    <string name="iap_terms_of_use">Điều khoản sử dụng</string>
+    <string name="push_notification_channel_name">Thông báo tỷ số trực tiếp</string>
+    <string name="push_notification_channel_desc">Thông báo về các trận đấu bóng đá trực tiếp và cập nhật tỷ số</string>
+    <string name="push_notification_default_title">Cập nhật tỷ số trực tiếp</string>
+</resources>

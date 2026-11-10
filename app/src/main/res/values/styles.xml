@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Month Picker Standard Styles -->
+    <style name="MonthPickerItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Ad Attribution Badge Style -->
+    <style name="AppTheme" parent="Theme.MyApplication" />
+
+    <style name="AppTheme.AdAttribution" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:text">Ad</item>
+        <item name="android:background">@color/textPrimary</item>
+        <item name="android:width">18dp</item>
+        <item name="android:height">18dp</item>
+    </style>
+
+    <!-- Custom Outlined TextInputLayout Style -->
+    <style name="CustomTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/textSecondary</item>
+        <item name="boxStrokeColor">@color/selectedBlue</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_md</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_md</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/selectedBlue</item>
+    </style>
+
+    <!-- Custom Material Date Picker Theme -->
+    <style name="CustomDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/selectedBlue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/textPrimary</item>
+        <item name="colorSecondary">@color/selectedBlue</item>
+        <item name="shapeAppearanceMediumComponent">@style/CustomDatePickerShape</item>
+        <item name="shapeAppearanceSmallComponent">@style/CustomDatePickerShape</item>
+    </style>
+
+    <style name="CustomDatePickerShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/radius_lg</item>
+    </style>
+
+    <!-- Dialog Bottom Sheets Style -->
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Base Typography Style -->
+    <style name="Typography">
+        <!-- Base typography system parent -->
+    </style>
+
+    <!-- Brand Typography Mapping Styles -->
+    <style name="Typography.Score">
+        <item name="android:textSize">@dimen/text_xxl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="Typography.TeamName">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="Typography.LeagueName">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="Typography.MatchStatus">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryRed</item>
+    </style>
+
+    <style name="Typography.TabTitle">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="Typography.ToolbarTitle">
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <!-- Modern Unified Buttons System -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="rippleColor">#20FFFFFF</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/bg_btn_gradient</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="strokeColor">@color/selectedBlue</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/selectedBlue</item>
+        <item name="rippleColor">#1500A8F9</item>
+    </style>
+
+    <!-- Standard Modern Premium Card style -->
+    <style name="Widget.App.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardMaxElevation">4dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Corner8" parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>

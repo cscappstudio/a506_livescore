@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <!-- Edge-to-edge Top half banner image -->
+    <ImageView
+        android:id="@+id/ivSlideImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.62" />
+
+    <!-- Dark gradient fade overlay at the bottom of the banner image -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/intro_image_gradient"
+        app:layout_constraintBottom_toBottomOf="@id/ivSlideImage" />
+
+    <!-- Slide Title -->
+    <TextView
+        android:id="@+id/tvSlideTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ivSlideImage" />
+
+    <!-- Slide Description -->
+    <TextView
+        android:id="@+id/tvSlideDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="36dp"
+        android:gravity="center"
+        android:textColor="@color/text_muted"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.25"
+        app:layout_constraintTop_toBottomOf="@id/tvSlideTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

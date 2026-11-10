@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp">
+
+    <!-- Center Time Badge -->
+    <TextView
+        android:id="@+id/tvEventTime"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@color/divider_dark"
+        android:gravity="center"
+        android:textColor="@color/accent_green"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="74'" />
+
+    <!-- Left Side: Home Team Event Content -->
+    <LinearLayout
+        android:id="@+id/homeEventContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvEventTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvHomeEventPlayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            tools:text="Bukayo Saka (Pen)" />
+
+        <ImageView
+            android:id="@+id/ivHomeEventIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="Home Event Icon"
+            tools:src="@drawable/ic_live" />
+
+    </LinearLayout>
+
+    <!-- Right Side: Away Team Event Content -->
+    <LinearLayout
+        android:id="@+id/awayEventContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvEventTime"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivAwayEventIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="Away Event Icon"
+            tools:src="@drawable/ic_live" />
+
+        <TextView
+            android:id="@+id/tvAwayEventPlayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            tools:text="Cole Palmer" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

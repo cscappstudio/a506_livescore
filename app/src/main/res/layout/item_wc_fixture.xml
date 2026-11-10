@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/card_dark"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/divider_dark"
+    app:strokeWidth="1dp"
+    app:rippleColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutWcLiveFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Round Stage Info -->
+            <TextView
+                android:id="@+id/tvFixtureRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRẬN KHAI MẠC"
+                android:textColor="@color/accent_green"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Stadium/Location Info -->
+            <TextView
+                android:id="@+id/tvFixtureStadium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Estadio Azteca, Mexico City"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp"
+                android:fontFamily="@font/sf_pro"
+                app:layout_constraintTop_toBottomOf="@id/tvFixtureRound"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Middle Row: Team 1 - VS - Team 2 -->
+            <LinearLayout
+                android:id="@+id/layoutTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tvFixtureStadium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Team 1 -->
+                <TextView
+                    android:id="@+id/tvFixtureTeam1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Mexico"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sf_pro" />
+
+                <!-- Team 1 Logo -->
+                <ImageView
+                    android:id="@+id/ivFixtureHomeLogo"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Home Logo"
+                    android:src="@drawable/ic_favorite_border"
+                    app:tint="@color/text_muted"
+                    android:layout_gravity="center_vertical" />
+
+                <!-- Score Box -->
+                <LinearLayout
+                    android:id="@+id/layoutWcScoreBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:background="@drawable/bg_score_box_blue">
+
+                    <TextView
+                        android:id="@+id/tvVS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VS"
+                        android:textColor="@color/primaryBlue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sf_pro" />
+                </LinearLayout>
+
+                <!-- Team 2 Logo -->
+                <ImageView
+                    android:id="@+id/ivFixtureAwayLogo"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Away Logo"
+                    android:src="@drawable/ic_favorite_border"
+                    app:tint="@color/text_muted"
+                    android:layout_gravity="center_vertical" />
+
+                <!-- Team 2 -->
+                <TextView
+                    android:id="@+id/tvFixtureTeam2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="Ecuador"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sf_pro" />
+
+            </LinearLayout>
+
+            <!-- Bottom Row: Kickoff Time (Center) -->
+            <TextView
+                android:id="@+id/tvFixtureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="20:00"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp"
+                android:fontFamily="@font/sf_pro"
+                app:layout_constraintTop_toBottomOf="@id/layoutTeams"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Legacy views container -->
+            <LinearLayout
+                android:id="@+id/layoutRightActions"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivReminder"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivFavoriteLegacy"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/cardVS"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Favorite Icon for Live/Finished matches placed at bottom right -->
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Favorite Match"
+                android:src="@drawable/ic_favorite_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Upcoming Layout -->
+        <LinearLayout
+            android:id="@+id/layoutWcUpcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Clickable area for Match Details -->
+            <LinearLayout
+                android:id="@+id/layoutMatchDetailsClickUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal">
+
+                <!-- Kickoff Time -->
+                <TextView
+                    android:id="@+id/tvMatchTimeUpcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sf_pro"
+                    tools:text="23:30" />
+
+                <!-- Teams Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp">
+
+                    <!-- Home Team Name -->
+                    <TextView
+                        android:id="@+id/tvHomeNameUpcoming"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sf_pro"
+                        tools:text="Shahrdari Noshahr" />
+
+                    <!-- Home Team Logo -->
+                    <ImageView
+                        android:id="@+id/ivHomeLogoUpcoming"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:scaleType="fitCenter" />
+
+                    <!-- Separator -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sf_pro" />
+
+                    <!-- Away Team Logo -->
+                    <ImageView
+                        android:id="@+id/ivAwayLogoUpcoming"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="fitCenter" />
+
+                    <!-- Away Team Name -->
+                    <TextView
+                        android:id="@+id/tvAwayNameUpcoming"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sf_pro"
+                        tools:text="Shahrdari Noshahr" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Divider Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- Bottom Actions Bar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp">
+
+                <!-- Supercomputer Pick Button Container -->
+                <FrameLayout
+                    android:id="@+id/layoutPredictButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:id="@+id/btnPredict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="12dp"
+                        android:background="@drawable/bg_btn_predict_upcoming"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_ai_robot"
+                            app:tint="@color/primaryBlue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/supercomputer_prediction"
+                            android:textColor="@color/primaryBlue"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/sf_pro" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Right Actions (Reminder & Favorite) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <!-- Reminder Icon -->
+                    <ImageView
+                        android:id="@+id/ivReminderUpcoming"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Reminder Alarm"
+                        android:src="@drawable/ic_bell"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Favorite Icon -->
+                    <ImageView
+                        android:id="@+id/ivFavoriteUpcoming"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Favorite Match"
+                        android:src="@drawable/ic_favorite_border"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

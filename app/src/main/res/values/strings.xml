@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveScore: Football Match Live</string>
+    <string name="nav_live">Live</string>
+    <string name="nav_leagues">Leagues</string>
+    <string name="nav_news">News</string>
+    <string name="home_header_live">"LIVE "</string>
+    <string name="home_header_score">"SCORE "</string>
+    <string name="home_header_slogan">"Football • Faster • Closer "</string>
+    <string name="nav_favorite">Favourite</string>
+    <string name="nav_profile">Profile</string>
+    <string name="wc26">WC26</string>
+    
+    <string name="favorite_title">FAVOURITES</string>
+    <string name="my_follow">YOUR FOLLOWS</string>
+    <string name="my_matches">YOUR MATCHES</string>
+    
+    <string name="live">Live</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="finished">Finished</string>
+    
+    <string name="empty_matches">No favorite matches yet</string>
+    <string name="empty_leagues">No favorite leagues yet</string>
+    <string name="empty_teams">No favorite teams yet</string>
+    <string name="empty_players">No favorite players yet</string>
+    
+    <string name="profile_title">MY PROFILE</string>
+    <string name="language">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_vietnamese">Tiếng Việt</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_german">Deutsch</string>
+    <string name="lang_portuguese">Português</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_indonesian">Bahasa Indonesia</string>
+    <string name="premium_badge">👑 PREMIUM MEMBER</string>
+    <string name="free_plan">FREE PLAN</string>
+    <string name="daily_limit">Daily API Usage Limit</string>
+    <string name="upgrade_button">UPGRADE NOW</string>
+    <string name="intro_next">Next</string>
+    <string name="intro_start">Start</string>
+    <string name="intro_step_1_progress">Step 1: 1/3</string>
+    <string name="intro_step_2_progress">Step 2: 2/3</string>
+    <string name="intro_step_3_progress">Step 3: 3/3</string>
+    <string name="intro_step_1_title">SELECT FAVORITE LEAGUES</string>
+    <string name="intro_step_1_subtitle">Filter news &amp; results of leagues you care about</string>
+    <string name="intro_step_1_hint">Search leagues...</string>
+    <string name="intro_step_2_title">SELECT TEAMS YOU FOLLOW</string>
+    <string name="intro_step_2_subtitle">We will prioritize showing clubs you select first</string>
+    <string name="intro_step_2_hint">Search teams, clubs...</string>
+    <string name="intro_step_3_title">SELECT FAVORITE PLAYERS</string>
+    <string name="intro_step_3_subtitle">Follow the world\'s top soccer superstars</string>
+    <string name="intro_step_3_hint">Search players...</string>
+    <string name="intro_finish">FINISH</string>
+    <string name="item_hot"> • Popular 🔥</string>
+    <string name="item_belongs">Belongs to: %1$s</string>
+    <string name="item_nationality">Nationality: %1$s</string>
+    <string name="intro_skip">SKIP</string>
+    <string name="intro_no_results">No results found</string>
+    <string name="welcome_title">WELCOME TO LIVESCORE</string>
+    <string name="choose_language">SELECT LANGUAGE</string>
+    <string name="choose_language_desc">Select the official display language of the app to proceed with the personalized setup flow.</string>
+    <string name="profile_settings">SETTINGS</string>
+    <string name="profile_display_preferences">DISPLAY &amp; PERSONALIZATION</string>
+    <string name="profile_system">STORAGE &amp; SYSTEM</string>
+    <string name="profile_about">SOFTWARE INFORMATION</string>
+    <string name="profile_version">Version</string>
+    <string name="language_dialog_title">Select Language</string>
+    <string name="language_changed_toast">Language updated to %1$s</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_app_title">LIVESCORE</string>
+    <string name="splash_subtitle">PREMIUM SPORTS HUB</string>
+    <string name="splash_ads_warning">This action can contain ads</string>
+    
+    <!-- Home Screen -->
+    <string name="tab_matches">Matches</string>
+    <string name="tab_leagues">LEAGUES</string>
+    <string name="empty_fixtures">No data record</string>
+    <string name="empty_live_fixtures">No live matches currently</string>
+    <string name="empty_upcoming_fixtures">No scheduled matches for today</string>
+    <string name="empty_finished_fixtures">No finished matches for today</string>
+    <string name="empty_live_title">No Matches Right Now</string>
+    <string name="empty_live_desc">There are no live matches at the moment. Check upcoming matches or explore other leagues.</string>
+    <string name="empty_upcoming_title">No Upcoming Matches</string>
+    <string name="empty_upcoming_desc">There are no scheduled matches for today. Check other dates or explore other leagues.</string>
+    <string name="empty_finished_title">No Finished Matches</string>
+    <string name="empty_finished_desc">There are no finished matches for today. Check previous dates or explore other leagues.</string>
+    <string name="empty_general_title">No Matches Found</string>
+    <string name="empty_general_desc">There are no matches available at the moment.</string>
+    <string name="limit_exceeded_empty_state">You have used up all free limits today</string>
+    
+    <!-- League Details -->
+    <string name="tab_standings">STANDINGS</string>
+    <string name="tab_fixtures">FIXTURES</string>
+    <string name="table_header_team">TEAM</string>
+    <string name="table_header_p">P</string>
+    <string name="table_header_w">W</string>
+    <string name="table_header_d">D</string>
+    <string name="table_header_l">L</string>
+    <string name="table_header_gd">GD</string>
+    <string name="table_header_pts">PTS</string>
+    
+    <!-- Match Details -->
+    <string name="tab_stats">Stats</string>
+    <string name="tab_timeline">Timeline</string>
+    <string name="tab_lineups">Lineups</string>
+    
+    <!-- Search Screen -->
+    <string name="search_input_hint">Search matches, teams, leagues...</string>
+    <string name="search_empty_title">Explore Soccer</string>
+    <string name="search_empty_desc">Search for top teams and leagues like Premier League, Real Madrid, Vietnam or World Cup 2026...</string>
+    <string name="search_header_matches">Matches</string>
+    <string name="search_header_teams">Teams</string>
+    <string name="search_header_leagues">Leagues</string>
+    <string name="search_no_results">No results found</string>
+    <string name="search_no_results_desc">We couldn\'t find any results for \"%1$s\". Try another keyword!</string>
+    
+    <!-- News Screen -->
+    <string name="news_center_title">HOT NEWS 24H</string>
+    <string name="news_featured_today">⭐ TODAY FEATURED</string>
+    <string name="news_1_title">FIFA officially announces 2026 World Cup match schedule in USA, Mexico and Canada!</string>
+    <string name="news_1_desc">The historic opening match will take place at the famous Azteca Stadium in Mexico. New Jersey won the right to host the final.</string>
+    <string name="news_1_author">By Editorial Board • 5 min read</string>
+    <string name="news_detail_link">Detail ➔</string>
+    <string name="news_2_title">Arsenal dominates Chelsea 5-0 at Emirates, making a spectacular breakthrough</string>
+    <string name="news_2_desc">Braces from Ben White and Kai Havertz helped the Gunners sink their city rivals and send a message to Man City...</string>
+    <string name="news_2_time">1 hour ago • 3 min read</string>
+    <string name="news_3_title">Kylian Mbappé agrees on preliminary terms to join Real Madrid</string>
+    <string name="news_3_desc">All personal terms are agreed. The French superstar will land at Bernabeu as a free agent with a record signing bonus...</string>
+    <string name="news_3_time">3 hours ago • 4 min read</string>
+    <string name="news_4_title">Crazy scenario at Semifinals: Real Madrid makes a miraculous comeback against Bayern Munich</string>
+    <string name="news_4_desc">Two quick stoppage-time goals from Joselu blew the roof off Santiago Bernabéu, sending Real Madrid to the final...</string>
+    <string name="news_4_time">Yesterday • 6 min read</string>
+    
+    <!-- WC26 Screen -->
+    <string name="wc26_days_until">%1$d days until the Opening Ceremony</string>
+    <string name="wc26_starts_today">⚽ KICKOFF TODAY!</string>
+    <string name="wc26_ongoing">⚽ World Cup 2026 is ongoing!</string>
+    <string name="wc26_groups">GROUPS</string>
+    <string name="wc26_teams">TEAMS</string>
+    <string name="wc26_news">NEWS</string>
+    <string name="wc26_opening_match">Opening Match • Round 1</string>
+    <string name="wc26_azteca_stadium">Azteca Stadium, Mexico City</string>
+    <string name="wc26_metlife_stadium">MetLife Stadium, New York</string>
+    <string name="wc26_vs">vs</string>
+    <string name="wc26_round_1_group_a">Round 1 • Group A</string>
+    <string name="wc26_group_a">GROUP A</string>
+    <string name="wc26_group_b">GROUP B</string>
+    <string name="wc26_qualified_teams">QUALIFIED TEAMS</string>
+    <string name="wc26_exclusive_news">EXCLUSIVE NEWS</string>
+    <string name="wc26_exclusive_news_title">World Cup 2026 final will be grandly hosted in New York/New Jersey!</string>
+    <string name="wc26_exclusive_news_desc">FIFA has officially awarded the hosting rights for the final to the MetLife Stadium with over 82,500 capacity on July 19, 2026.</string>
+    <string name="wc26_preparation">PREPARATION</string>
+    <string name="wc26_prep_title">USA accelerates transportation and security infrastructure for record fans</string>
+    <string name="wc26_prep_desc">The federal government approved a special budget package to upgrade subways and aviation connecting host cities directly...</string>
+    <string name="wc26_view_now">VIEW NOW ➔</string>
+    <string name="wc26_general_news">📰 GENERAL NEWS</string>
+    <string name="wc26_general_news_desc">View all sports events, transfers &amp; league news in the last 24 hours</string>
+    <string name="league_center_title">League Center</string>
+    <string name="league_center_subtitle">Global standings &amp; stats</string>
+    <string name="tab_scorers">SCORERS</string>
+    <string name="tab_assists">ASSISTS</string>
+    <string name="share_title">SHARE MATCH</string>
+    <string name="share_score_title">Match Score &amp; Status</string>
+    <string name="share_score_desc">Share real-time goals and match status.</string>
+    <string name="share_stats_title">Detailed Match Statistics</string>
+    <string name="share_stats_desc">Share possession, shots, and corner kicks.</string>
+    <string name="share_full_title">Full Match Report</string>
+    <string name="share_full_desc">Share full report combining scores and stats.</string>
+    <string name="share_via">Share via</string>
+    <string name="share_copied_toast">Copied to clipboard!</string>
+    <string name="reminder_set_toast">Reminder set for the match!</string>
+    <string name="reminder_cancelled_toast">Reminder cancelled for the match!</string>
+    <string name="share_caption_template">Check out the match stats for %1$s vs %2$s at livescore://match/%3$d (Download app: https://livescore.premium/download)</string>
+
+    <!-- WC26 New Multilingual Strings -->
+    <string name="wc_tab_fixtures">MATCHES</string>
+    <string name="wc_tab_groups">STANDINGS</string>
+    <string name="wc_tab_bracket">BRACKET</string>
+    <string name="wc_no_data">No data</string>
+    <string name="wc_tbd">TBD</string>
+    <string name="wc_group_stage_name">Group Stage</string>
+    <string name="wc_default_stadium">Stadium</string>
+    <string name="wc_result_format">%1$s  [ Result: %2$d - %3$d ]</string>
+
+    <!-- Reminder Notification -->
+    <string name="reminder_notification_title">⚽ Match is about to start!</string>
+    <string name="reminder_notification_text">%1$s (%2$s) will kickoff in 5 minutes. Don\'t miss it!</string>
+    <string name="push_notification_channel_name">Match Updates</string>
+    <string name="push_notification_channel_desc">Live scores, goals and match results</string>
+    <string name="push_notification_default_title">Match Update</string>
+    <string name="reminder_default_match_title">Upcoming Match</string>
+    <string name="reminder_default_league_name">League</string>
+
+    <!-- Intro Slideshow -->
+    <string name="intro_slide_1_title">Real-Time Instant Updates</string>
+    <string name="intro_slide_1_desc">Stay updated on the fastest football actions on earth with second-by-second data, live scores &amp; visual match stats.</string>
+    <string name="intro_slide_2_title">Live Match Details &amp; Standings</string>
+    <string name="intro_slide_2_desc">Follow club positions, real-time standings and complete match schedules for the 2024-2026 seasons.</string>
+    <string name="intro_slide_3_title">All Leagues &amp; Tournaments</string>
+    <string name="intro_slide_3_desc">Receive smart notification alerts 5 minutes before kickoff so you never miss a goal-scoring moment.</string>
+    <string name="intro_slide_4_title">🏆 Current League Standings</string>
+    <string name="intro_slide_4_desc">Get ahead of the ultimate football festival with groups, news &amp; countdowns in the USA, Canada &amp; Mexico.</string>
+
+    <!-- Permissions -->
+    <string name="permission_title">Enable Notifications</string>
+    <string name="permission_desc">To make sure you never miss exciting matches, please grant notification permissions to the application.</string>
+    <string name="permission_allow">Grant Permission</string>
+    <string name="permission_skip">Skip</string>
+
+    <!-- Date Picker / Calendar -->
+    <string name="select_match_date">Select Match Date</string>
+    <string name="today">Today</string>
+    <string name="no_live_matches">No live matches currently in progress</string>
+
+    <!-- Favorites / List Headers -->
+    <string name="club">Club</string>
+    <string name="league_with_country">League • %1$s</string>
+    <string name="no_favorite_matches">No favorite matches yet</string>
+    <string name="no_favorites_found">No favorites found yet</string>
+
+    <!-- Timeline Legend -->
+    <string name="legend_goal">Goal</string>
+    <string name="legend_yellow_card">Yellow Card</string>
+    <string name="legend_red_card">Red Card</string>
+    <string name="legend_subst">Sub</string>
+    <!-- IAP Paywall -->
+    <string name="iap_skip">SKIP</string>
+    <string name="iap_upgrade_title">🏆 GO <font color="#259CF4">VIP PREMIUM</font></string>
+    <string name="iap_upgrade_subtitle">Experience ultimate football with zero limits</string>
+    <string name="iap_out_of_quota_title">⚠️ DAILY FREE LIMIT REACHED</string>
+    <string name="iap_out_of_quota_subtitle">You have used up all 20 free requests for today. Upgrade to Premium to continue unlimited experience!</string>
+    <string name="iap_feature_1">Live updates every 15s</string>
+    <string name="iap_feature_2">Unlimited favorites</string>
+    <string name="iap_feature_3">No ads, ever</string>
+    <string name="iap_feature_4">Premium stats &amp; insights</string>
+    <string name="iap_feature_5">AI-powered match score predictions</string>
+    <string name="iap_weekly_vip">1 Week VIP</string>
+    <string name="iap_monthly_vip">Month VIP</string>
+    <string name="iap_pay_weekly">Billed every week</string>
+    <string name="iap_save_monthly">Save ~30\% 🔥</string>
+    <string name="iap_weekly_premium">Weekly Premium</string>
+    <string name="iap_only_price">only 5.99$/month</string>
+    <string name="iap_save_badge">Save 30%</string>
+    <string name="iap_cancel_anytime">$2.99/week. Cancel Anytime</string>
+    <string name="iap_cancel_anytime_monthly">$7.99/month. Cancel Anytime</string>
+    <string name="iap_btn_continue">Continue</string>
+    <string name="iap_btn_subscribe">Subscribe Now</string>
+    <string name="iap_toast_mock_success">Congratulations! Premium successfully activated (Mock Billing). 🎉</string>
+    <string name="iap_btn_connecting_mock">Connecting to Mock Billing...</string>
+    <string name="iap_restore_purchase">Restore Purchase</string>
+    <string name="iap_terms_of_service">Terms of Service</string>
+    <string name="iap_terms_of_use">Terms of Use</string>
+    <string name="iap_terms_of_service_toast">Terms of Service: Premium Auto-renewable subscription.</string>
+    <string name="iap_privacy_policy">Privacy Policy</string>
+    <string name="iap_privacy_policy_toast">Privacy Policy: Your payment information is fully secure.</string>
+    <string name="iap_toast_google_play_error">Error connecting to Google Play: %1$s</string>
+    <string name="iap_vip_button_label">VIP ⚡</string>
+    <string name="btn_discover">DISCOVER</string>
+
+    <!-- AI Prediction Paywall Dialog -->
+    <string name="dialog_ai_title">See What <font color="#259CF4">AI Predicts</font></string>
+    <string name="dialog_ai_subtitle">Unlock detailed score predictions before the match starts.</string>
+    <string name="dialog_ai_feature_1_title">Predicted final score</string>
+    <string name="dialog_ai_feature_1_desc">See the exact score AI predicts</string>
+    <string name="dialog_ai_feature_2_title">Winning probability</string>
+    <string name="dialog_ai_feature_2_desc">Win / Draw / Lose probability analysis</string>
+    <string name="dialog_ai_feature_3_title">Confidence level</string>
+    <string name="dialog_ai_feature_3_desc">AI confidence rating for every prediction</string>
+    <string name="dialog_ai_btn_later">Later</string>
+    <string name="dialog_ai_btn_go_premium">Go Premium</string>
+
+    <!-- New Permission Screen Strings -->
+    <string name="permission_main_title">Permission</string>
+    <string name="permission_main_subtitle">Stay on track with your favorite matches</string>
+    <string name="permission_section_title">PERMISSIONS</string>
+    <string name="permission_push_title">Push Notifications</string>
+    <string name="permission_push_desc">Allow notifications for reminders and updates</string>
+    <string name="permission_footer_desc">These permissions help us provide a better experience.</string>
+    <string name="permission_confirm">Confirm</string>
+
+    <!-- Extracted Layout & Code Strings -->
+    <string name="leagues_header_title">League Center</string>
+    <string name="leagues_header_desc">Real-time Standings and Top Performers</string>
+    <string name="leagues_col_rank">#</string>
+    <string name="toast_share_match_failed">Failed to share match info</string>
+    <string name="toast_select_language_continue">Please select language to continue</string>
+    <string name="toast_language_switched_vi">Đã chuyển đổi sang Tiếng Việt</string>
+    <string name="toast_language_switched_en">Switched to English</string>
+
+    <!-- Match Detail Stats, Radar & Top Players -->
+    <string name="assists_label">ASSISTS</string>
+    <string name="goals_label">GOALS</string>
+    <string name="realtime_match_radar">REALTIME MATCH RADAR</string>
+    <string name="attack_momentum_pressure">ATTACK MOMENTUM PRESSURE</string>
+    <string name="home_label">HOME</string>
+    <string name="away_label">AWAY</string>
+    <string name="match_statistics">MATCH STATISTICS</string>
+    <string name="ball_possession">Ball Possession</string>
+    <string name="total_shots">Total Shots</string>
+    <string name="shots_on_target">Shots on Target</string>
+    <string name="corner_kicks">Corner Kicks</string>
+    <string name="stat_fouls">Fouls</string>
+    <string name="stat_yellow_cards">Yellow Cards</string>
+    <string name="stat_red_cards">Red Cards</string>
+    <string name="stat_goalkeeper_saves">Goalkeeper Saves</string>
+    <string name="stat_total_passes">Total Passes</string>
+    <string name="stat_shots_off_target">Shots off Target</string>
+    <string name="stat_blocked_shots">Blocked Shots</string>
+    <string name="stat_shots_inside_box">Shots inside Box</string>
+    <string name="stat_shots_outside_box">Shots outside Box</string>
+    <string name="stat_offsides">Offsides</string>
+    <string name="stat_passes_accurate">Accurate Passes</string>
+    <!-- Premium Permission Mockup Screen -->
+    <string name="permission_mockup_title">🔔 Never Miss a Goal!</string>
+    <string name="permission_mockup_desc">Get notified when your favorite matches kick off and whenever a goal is scored live. Stay connected to every exciting moment.</string>
+    <string name="permission_card_reminder_title">⏰ Kick-off Reminders</string>
+    <string name="permission_card_reminder_desc">Get notified before your selected matches begin.</string>
+    <string name="permission_card_goal_title">⚽ Live Goal Alerts</string>
+    <string name="permission_card_goal_desc">Receive instant updates whenever a goal is scored.</string>
+    <string name="permission_btn_continue">Continue</string>
+    <string name="permission_btn_skip">Skip</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_confirm_title">Exit App?</string>
+    <string name="exit_confirm_desc">Are you sure you want to leave the app? We will miss you!</string>
+    <string name="exit_confirm_cancel">STAY</string>
+    <string name="exit_confirm_exit">EXIT</string>
+
+    <!-- AI Prediction Feature -->
+    <string name="tab_match">Match</string>
+    <string name="tab_prediction">Super computer</string>
+    <string name="prediction_locked_title">AI PREDICTION VIP</string>
+    <string name="prediction_locked_desc">Unlock Premium to access professional AI match analysis, win probability, over/under suggestions, and detailed tactical setups.</string>
+    <string name="ai_win_probability">WIN PROBABILITY</string>
+    <string name="ai_score_prediction">Predicted Score: %1$d - %2$d</string>
+    <string name="ai_confidence_score">Confidence Score: %1$d%%</string>
+    <string name="ai_over_under">Over/Under: %1$s</string>
+    <string name="ai_btts">Both Teams to Score (BTTS): %1$s</string>
+    <string name="ai_yes">Yes</string>
+    <string name="ai_no">No</string>
+    <string name="ai_predicted_goalscorers">PREDICTED GOALSCORERS</string>
+    <string name="ai_general_analysis">GENERAL ANALYSIS</string>
+    <string name="ai_tactical_breakdown">TACTICAL BREAKDOWN</string>
+    <string name="ai_home_setup">Home Squad Setup</string>
+    <string name="ai_away_setup">Away Squad Setup</string>
+    <string name="ai_victory_keys">KEYS TO VICTORY</string>
+    <string name="ai_key_battle">KEY BATTLE</string>
+    <string name="ai_upgrade_now">Upgrade Now</string>
+    <string name="ai_squad_impact">SQUAD IMPACT</string>
+    <string name="ai_strengths_weaknesses">STRENGTHS &amp; WEAKNESSES</string>
+    <string name="ai_key_predictions">KEY PREDICTIONS</string>
+    <string name="ai_corners">CORNERS</string>
+    <string name="ai_yellow_cards">YELLOW CARDS</string>
+    <string name="ai_key_stats">KEY STATS</string>
+    <string name="ai_home_badge">HOME</string>
+    <string name="ai_away_badge">AWAY</string>
+    <string name="lock_overlay_title">UNLOCK PREMIUM</string>
+    <string name="lock_overlay_desc">This feature requires Premium. Upgrade now to track real-time match radar, attack momentum pressure, and unlimited stats!</string>
+    <string name="lock_overlay_button">Upgrade Now</string>
+    <string name="over_under">Over / Under</string>
+    <string name="btts_header">Both Teams to Score</string>
+    <string name="news_tag_world_cup">WORLD CUP 2026</string>
+    <string name="news_tag_premier_league">PREMIER LEAGUE</string>
+    <string name="news_tag_transfers">TRANSFERS</string>
+    <string name="news_tag_champions_league">CHAMPIONS LEAGUE</string>
+    <string name="title_winner_prediction">Predicted Winner</string>
+    <string name="title_score_prediction">Projected Score</string>
+    <string name="title_confidence_score">AI Confidence</string>
+    <string name="title_over_under_prediction">Goals Over/Under</string>
+    <string name="title_btts_prediction">Both Teams to Score</string>
+    <string name="title_corners_prediction">Predicted Corners</string>
+    <string name="title_yellow_cards_prediction">Predicted Cards</string>
+    <string name="title_tactical_analysis">Tactical Breakdown</string>
+    <string name="title_strengths_weaknesses">Strengths &amp; Weaknesses</string>
+    <string name="title_form_overview">Form &amp; Momentum</string>
+    <string name="title_squad_impact">Squad &amp; Injury Impact</string>
+    <string name="title_prominent_players">Key Impact Players</string>
+    <string name="title_key_stats">Key Supporting Stats</string>
+    <string name="read_more">Read More</string>
+    <string name="title_key_predictions">Key Predictions</string>
+    <string name="btn_score_prediction">SCORE PREDICTION</string>
+    <string name="supercomputer_prediction">Supercomputer\'s Prediction</string>
+
+    <!-- News & Team Fixtures -->
+    <string name="news_category_all">All</string>
+    <string name="news_category_transfers">Transfers</string>
+    <string name="news_category_world_cup">World Cup</string>
+    <string name="news_category_premier_league">Premier League</string>
+    <string name="news_category_champions_league">Champions League</string>
+    <string name="news_no_data">No news available</string>
+    <string name="news_no_data_category">No news found for this category.</string>
+    <string name="news_share_title">Share News</string>
+    <string name="team_fixtures_title">Team Fixtures</string>
+    <string name="team_fixtures_filter_last_5">Last 5</string>
+    <string name="team_fixtures_filter_last_10">Last 10</string>
+    <string name="team_fixtures_filter_last_15">Last 15</string>
+    <string name="team_fixtures_filter_last_20">Last 20</string>
+    <string name="team_fixtures_wins">Wins</string>
+    <string name="team_fixtures_draws">Draws</string>
+    <string name="team_fixtures_losses">Losses</string>
+    <string name="team_fixtures_no_data">No fixtures found for this team.</string>
+    <string name="team_fixtures_invalid_id">Invalid team ID</string>
+    <string name="btn_retry">Retry</string>
+
+</resources>

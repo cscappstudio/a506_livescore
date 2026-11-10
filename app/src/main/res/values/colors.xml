@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- System Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightTransparent">#1A000000</color>
+    <color name="white_10">#FFFFFF</color>
+
+    <!-- Modern Dark Sports Theme Color System -->
+    <color name="background">#010A28</color>
+    <color name="surface">#07153D</color>
+    <color name="border">#162752</color>
+    <color name="divider">#101E42</color>
+
+    <!-- Brand Accent Colors (#00A8F9 Primary & Cyan Secondary) -->
+    <color name="primaryGreen">#00A8F9</color>
+    <color name="primaryBlue">#00A8F9</color>
+    <color name="selectedBlue">@color/primaryBlue</color>
+    <color name="accentBlue">#38BDF8</color>
+    <color name="accentBlueLight">#7DD3FC</color>
+    <color name="playerBadgeBg">#132238</color>
+    <color name="primaryRed">#FF3B30</color>
+
+    <!-- Typography Text Colors -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#8F9CAE</color>
+    <color name="textHint">#64748B</color>
+
+    <!-- Semantic Status Colors -->
+    <color name="colorSuccess">#00A8F9</color>
+    <color name="colorError">#FF3B30</color>
+    <color name="colorWarning">#F59E0B</color>
+    <color name="colorInfo">@color/accentBlue</color>
+
+    <!-- Button Gradient Colors -->
+    <color name="btn_gradient_start">#078BE2</color>
+    <color name="btn_gradient_end">#0557FB</color>
+
+    <!-- Backward Compatibility Mapping (Keeps 50+ Layouts Unbroken & Dark) -->
+    <color name="bg_light">@color/background</color>
+    <color name="bg_intro">@color/background</color>
+    <color name="card_dark">@color/surface</color>
+    <color name="accent_green">@color/primaryBlue</color>
+    <color name="accent_green_secondary">@color/accentBlue</color>
+    <color name="text_white">@color/textPrimary</color>
+    <color name="text_muted">@color/textSecondary</color>
+    <color name="divider_dark">@color/divider</color>
+    
+    <!-- Shimmer Loading Colors -->
+    <color name="shimmer_base">#0A1942</color>
+    <color name="shimmer_highlight">#152960</color>
+    
+    <!-- Event Badge Colors -->
+    <color name="card_yellow">@color/colorWarning</color>
+    <color name="card_red">@color/colorError</color>
+
+    <!-- Intro Slideshow Indicator Colors -->
+    <color name="neon_lime_green">@color/primaryBlue</color>
+    <color name="inactive_indicator_grey">@color/border</color>
+
+    <!-- Live Pulse Special Colors -->
+    <color name="live_pulse_center">@color/accentBlueLight</color>
+    <color name="live_pulse_primary">@color/primaryBlue</color>
+    <color name="live_pulse_transparent">#0000A8F9</color>
+    <color name="live_pulse_glow_start">#5A00A8F9</color>
+    <color name="live_pulse_glow_mid">#1E00A8F9</color>
+    <color name="live_pulse_dark">#132238</color>
+
+    <!-- Match Momentum Special Colors -->
+    <color name="momentum_home_stroke">@color/primaryBlue</color>
+    <color name="momentum_away_stroke">@color/textSecondary</color>
+    <color name="momentum_axis">@color/border</color>
+    <color name="momentum_grid">@color/divider</color>
+    <color name="momentum_text">@color/textSecondary</color>
+    <color name="momentum_home_fill_start">#4D00A8F9</color>
+    <color name="momentum_home_fill_end">#0500A8F9</color>
+    <color name="momentum_away_fill_start">#4D8F9CAE</color>
+    <color name="momentum_away_fill_end">#058F9CAE</color>
+
+    <!-- Timeline Special Colors -->
+    <color name="timeline_progress_end">@color/accentBlue</color>
+    <color name="timeline_playhead_glow">#3300A8F9</color>
+    <color name="timeline_soccer_ball_border">#8F9CAE</color>
+    <color name="timeline_soccer_ball_dark">#1E293B</color>
+    <color name="black_alpha_25">#40000000</color>
+
+    <!-- Pitch View Special Colors -->
+    <color name="pitch_stripe_a">#0B1B40</color>
+    <color name="pitch_stripe_b">#071534</color>
+    <color name="pitch_line">#4D00A8F9</color>
+    <color name="pitch_border_glow">#3300A8F9</color>
+    <color name="pitch_ball_shadow">#30000000</color>
+
+    <!-- Calendar Special Colors -->
+    <color name="calendar_day_selected">@color/primaryBlue</color>
+
+    <!-- Standings Special Colors -->
+    <color name="standing_promotion_blue">@color/accentBlue</color>
+
+    <!-- Top Stats Podium Colors -->
+    <color name="stats_rank_gold">#FFD700</color>
+    <color name="stats_rank_silver">#C0C0C0</color>
+    <color name="stats_rank_bronze">#CD7F32</color>
+</resources>

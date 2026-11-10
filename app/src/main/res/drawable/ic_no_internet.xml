@@ -1,0 +1,121 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Soft Backdrop Circle -->
+    <path
+        android:fillColor="#FFE4E6"
+        android:pathData="M120,110 m-75,0 a75,75 0,1,1 150,0 a75,75 0,1,1 -150,0" />
+
+    <!-- Screen Backdrop Shadow -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 67,88 L 173,88 A 6,6 0 0 1 179,94 L 179,145 L 61,145 L 61,94 A 6,6 0 0 1 67,88 Z" />
+
+    <!-- Laptop Screen Frame -->
+    <path
+        android:fillColor="#0284C7"
+        android:pathData="M 65,80 L 175,80 A 6,6 0 0 1 181,86 L 181,145 L 59,145 L 59,86 A 6,6 0 0 1 65,80 Z" />
+
+    <!-- Laptop Display Screen (Inner) -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M 64,85 L 176,85 L 176,140 L 64,140 Z" />
+
+    <!-- Text Placeholders on screen -->
+    <path
+        android:strokeWidth="3.5"
+        android:strokeColor="#94A3B8"
+        android:strokeLineCap="round"
+        android:pathData="M 95,98 L 145,98" />
+    <path
+        android:strokeWidth="3.5"
+        android:strokeColor="#cbd5e1"
+        android:strokeLineCap="round"
+        android:pathData="M 105,108 L 135,108" />
+
+    <!-- Progress bar on screen -->
+    <!-- Border -->
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#0284C7"
+        android:fillColor="#00000000"
+        android:pathData="M 80,120 L 160,120 A 3,3 0 0 1 163,123 L 163,125 A 3,3 0 0 1 160,128 L 80,128 A 3,3 0 0 1 77,125 L 77,123 A 3,3 0 0 1 80,120 Z" />
+    <!-- Progress Fill -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M 82,122 L 122,122 L 122,126 L 82,126 Z" />
+
+    <!-- Keyboard Base -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M 50,145 L 190,145 A 5,5 0 0 1 195,150 L 190,155 L 50,155 L 45,150 A 5,5 0 0 1 50,145 Z" />
+
+    <!-- Touchpad -->
+    <path
+        android:fillColor="#334155"
+        android:pathData="M 112,145 L 128,145 L 128,148 L 112,148 Z" />
+
+    <!-- Laptop Base Reflection/Shadow -->
+    <path
+        android:fillColor="#1e293b"
+        android:pathData="M 46,150 L 194,150 L 190,155 L 50,155 Z" />
+
+
+    <!-- 1. Orange Wifi Warning Bubble (Top Left) -->
+    <!-- Bubble Base -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M 40,40 L 85,40 A 8,8 0 0 1 93,48 L 93,70 A 8,8 0 0 1 85,78 L 40,78 A 8,8 0 0 1 32,70 L 32,48 A 8,8 0 0 1 40,40 Z" />
+
+    <!-- Wifi Icon inside bubble -->
+    <!-- Wifi Dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M61,68 A 1.5,1.5 0 1,1 64,68 A 1.5,1.5 0 1,1 61,68" />
+    <!-- Wifi Arc 1 -->
+    <path
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:pathData="M 56.5,63.5 A 7.5,7.5 0 0,1 68.5,63.5" />
+    <!-- Wifi Arc 2 -->
+    <path
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:pathData="M 52,59 A 14,14 0 0,1 73,59" />
+    <!-- Red Cancel Slash -->
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#EF4444"
+        android:strokeLineCap="round"
+        android:pathData="M 46,71 L 79,48" />
+
+    <!-- 2. Orange Warning Triangle Bubble (Top Right) -->
+    <!-- Bubble Base -->
+    <path
+        android:fillColor="#F97316"
+        android:pathData="M 155,50 L 200,50 A 8,8 0 0 1 208,58 L 208,80 A 8,8 0 0 1 200,88 L 155,88 A 8,8 0 0 1 147,80 L 147,58 A 8,8 0 0 1 155,50 Z" />
+
+    <!-- Warning Triangle inside bubble -->
+    <!-- Triangle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 177.5,58 L 192,80 L 163,80 Z" />
+    <!-- Warning Sign (Exclamation Point) -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#EF4444"
+        android:strokeLineCap="round"
+        android:pathData="M 177.5,66 L 177.5,72" />
+    <!-- Warning Dot -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M176.3,76 A 1.2,1.2 0 1,1 178.7,76 A 1.2,1.2 0 1,1 176.3,76" />
+
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include SharedPreferences files for request limits and onboarding preferences -->
+        <include domain="sharedpref" path="livescore_request_limits_prefs.xml"/>
+        <include domain="sharedpref" path="livescore_onboarding_prefs.xml"/>
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="livescore_request_limits_prefs.xml"/>
+        <include domain="sharedpref" path="livescore_onboarding_prefs.xml"/>
+    </device-transfer>
+</data-extraction-rules>

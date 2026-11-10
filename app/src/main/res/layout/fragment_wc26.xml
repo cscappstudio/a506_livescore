@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_light"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/wcTabsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_light"
+            android:gravity="center_vertical">
+
+            <!-- Tab 1 -->
+            <LinearLayout
+                android:id="@+id/tabWcFixtures"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:id="@+id/tvWcFixtures"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/wc_tab_fixtures"
+                    android:textColor="@color/accent_green"
+                    android:textSize="14sp" />
+                <View
+                    android:id="@+id/indicatorWcFixtures"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/accent_green" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@color/divider_dark" />
+
+            <!-- Tab 2 -->
+            <LinearLayout
+                android:id="@+id/tabWcGroups"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:id="@+id/tvWcGroups"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/wc_tab_groups"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+                <View
+                    android:id="@+id/indicatorWcGroups"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@color/divider_dark" />
+
+            <!-- Tab 3 -->
+            <LinearLayout
+                android:id="@+id/tabWcVLTT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:id="@+id/tvWcVLTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/wc_tab_bracket"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+                <View
+                    android:id="@+id/indicatorWcVLTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/wcTabsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_dark" />
+
+        <FrameLayout
+            android:id="@+id/frAdsWc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone" >
+            <include layout="@layout/layout_shimmer_no_media" />
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- CONTENT 1: Fixtures Panel -->
+            <LinearLayout
+                android:id="@+id/layoutWcFixturesPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                                <LinearLayout
+                    android:id="@+id/wcFixturesFilterLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="4dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnWcFinished"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="0dp"
+                        android:background="@drawable/bg_tab_filter_selector"
+                        app:backgroundTint="@null"
+                        android:text="@string/finished"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/ic_tab_finished"
+                        app:iconGravity="textStart"
+                        app:iconPadding="6dp"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/white"
+                        app:strokeWidth="0dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnWcLive"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="4dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="0dp"
+                        android:background="@drawable/bg_tab_filter_selector"
+                        app:backgroundTint="@null"
+                        android:text="@string/live"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/ic_tab_live"
+                        app:iconGravity="textStart"
+                        app:iconPadding="6dp"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/white"
+                        app:strokeWidth="0dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnWcUpcoming"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="0dp"
+                        android:background="@drawable/bg_tab_filter_selector"
+                        app:backgroundTint="@null"
+                        android:text="@string/upcoming"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/ic_tab_upcoming"
+                        app:iconGravity="textStart"
+                        app:iconPadding="6dp"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/white"
+                        app:strokeWidth="0dp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWcFixtures"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="16dp"
+                    android:paddingBottom="24dp"
+                    android:clipToPadding="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+            <!-- CONTENT 2: Groups ScrollView -->
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollWcGroups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutWcGroupsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingBottom="24dp">
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <!-- CONTENT 3: Bracket (VLTT) Horizontal ScrollView -->
+            <HorizontalScrollView
+                android:id="@+id/scrollWcBracket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:fillViewport="true">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scrollWcBracketVertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:id="@+id/layoutWcBracketContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <!-- Column 1: Vòng 1/8 (Round of 16) -->
+                        <LinearLayout
+                            android:id="@+id/colR16"
+                            android:layout_width="210dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="top" />
+
+                        <!-- Connector 1: R16 -> QF -->
+                        <LinearLayout
+                            android:id="@+id/connCol1"
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" />
+
+                        <!-- Column 2: Tứ kết (Quarterfinals) -->
+                        <LinearLayout
+                            android:id="@+id/colQF"
+                            android:layout_width="210dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="top" />
+
+                        <!-- Connector 2: QF -> SF -->
+                        <LinearLayout
+                            android:id="@+id/connCol2"
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" />
+
+                        <!-- Column 3: Bán kết (Semifinals) -->
+                        <LinearLayout
+                            android:id="@+id/colSF"
+                            android:layout_width="210dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="top" />
+
+                        <!-- Connector 3: SF -> Final -->
+                        <LinearLayout
+                            android:id="@+id/connCol3"
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" />
+
+                        <!-- Column 4: Chung kết (Final) -->
+                        <LinearLayout
+                            android:id="@+id/colFinal"
+                            android:layout_width="210dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="top" />
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </HorizontalScrollView>
+
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Full Screen / Zoom Toggle Button for VLTT -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWcZoom"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:padding="0dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:backgroundTint="@color/card_dark"
+        android:visibility="gone"
+        app:elevation="4dp"
+        app:icon="@drawable/ic_zoom_in"
+        app:iconSize="24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="@color/text_white"
+        app:strokeColor="@color/accent_green"
+        app:strokeWidth="1dp"
+        app:cornerRadius="24dp" />
+
+    <!-- Full-Screen Loading Overlay (Blocks clicks and centers Lottie) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutLoadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6010A28"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieLoading"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:lottie_rawRes="@raw/loading_data"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

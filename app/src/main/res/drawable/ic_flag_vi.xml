@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="24dp"
+    android:viewportWidth="32"
+    android:viewportHeight="24">
+    <!-- Red background -->
+    <path
+        android:fillColor="#DA251D"
+        android:pathData="M0,0h32v24h-32z" />
+    <!-- Yellow 5-point star -->
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M16,5 L18.06,11.34 L24.73,11.34 L19.33,15.26 L21.39,21.6 L16,17.68 L10.61,21.6 L12.67,15.26 L7.27,11.34 L13.94,11.34 Z" />
+</vector>

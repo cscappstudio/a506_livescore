@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light">
+
+        <!-- Top Native Banner Ad -->
+        <FrameLayout
+            android:id="@+id/layoutAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Phone Image (Taller than Slide 1 & 4) -->
+        <ImageView
+            android:id="@+id/im_LogoSlide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_slide_3"
+            app:layout_constraintDimensionRatio="412:668"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutAds"
+            app:layout_constraintBottom_toTopOf="@id/tv_title"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <!-- Title Header -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/intro_slide_3_title"
+            android:textColor="@color/text_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintTop_toBottomOf="@id/im_LogoSlide"
+            app:layout_constraintBottom_toTopOf="@id/layout_dots"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Centered 4 Dots Indicators -->
+        <LinearLayout
+            android:id="@+id/layout_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintBottom_toTopOf="@id/btnNext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Dot 1 (Inactive) -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:background="@drawable/bg_dot_inactive" />
+
+            <!-- Dot 2 (Inactive) -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_dot_inactive" />
+
+            <!-- Dot 3 (Active) -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_dot_active" />
+
+            <!-- Dot 4 (Inactive) -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_dot_inactive" />
+
+        </LinearLayout>
+
+        <!-- Large Full-Width Solid Next Button at Bottom -->
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_btn_solid_blue"
+            android:gravity="center"
+            android:text="@string/intro_next"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/loadingNext"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintTop_toTopOf="@id/btnNext"
+            app:layout_constraintBottom_toBottomOf="@id/btnNext"
+            app:layout_constraintStart_toStartOf="@id/btnNext"
+            app:layout_constraintEnd_toEndOf="@id/btnNext" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include SharedPreferences files for request limits and onboarding preferences -->
+    <include domain="sharedpref" path="livescore_request_limits_prefs.xml"/>
+    <include domain="sharedpref" path="livescore_onboarding_prefs.xml"/>
+</full-backup-content>

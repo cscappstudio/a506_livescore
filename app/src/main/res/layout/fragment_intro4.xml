@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light">
+
+        <!-- Phone Image -->
+        <ImageView
+            android:id="@+id/im_LogoSlide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_slide_4"
+            app:layout_constraintDimensionRatio="412:440"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_title"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <!-- Title Header -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/intro_slide_4_title"
+            android:textColor="@color/text_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintTop_toBottomOf="@id/im_LogoSlide"
+            app:layout_constraintBottom_toTopOf="@id/layout_navigation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Bottom Navigation Bar (above ads) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintBottom_toTopOf="@id/layoutAds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- 4 Dots Indicators on Left -->
+            <LinearLayout
+                android:id="@+id/layout_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <!-- Dot 1 (Inactive) -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:background="@drawable/bg_dot_inactive" />
+
+                <!-- Dot 2 (Inactive) -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_dot_inactive" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_dot_inactive" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_dot_active" />
+
+            </LinearLayout>
+
+            <!-- Small Outlined Next Button on Right -->
+            <TextView
+                android:id="@+id/btnNext"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_btn_gradient"
+                android:gravity="center"
+                android:text="@string/intro_next"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/loadingNext"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/white"
+                app:layout_constraintTop_toTopOf="@id/btnNext"
+                app:layout_constraintBottom_toBottomOf="@id/btnNext"
+                app:layout_constraintStart_toStartOf="@id/btnNext"
+                app:layout_constraintEnd_toEndOf="@id/btnNext" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Native Ad at Bottom -->
+        <FrameLayout
+            android:id="@+id/layoutAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <include layout="@layout/ads_native_shimer" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

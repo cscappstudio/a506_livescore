@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Rank/Position -->
+    <TextView
+        android:id="@+id/tvRank"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:gravity="center_vertical|start"
+        android:textColor="@color/text_white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <!-- Team Logo -->
+    <ImageView
+        android:id="@+id/ivTeamLogo"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="8dp"
+        tools:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription" />
+
+    <!-- Team Name -->
+    <TextView
+        android:id="@+id/tvTeamName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:textColor="@color/text_white"
+        android:textSize="13sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Manchester City" />
+
+    <!-- Played (P) -->
+    <TextView
+        android:id="@+id/tvPlayed"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:textSize="12sp"
+        tools:text="38" />
+
+    <!-- Won (W) -->
+    <TextView
+        android:id="@+id/tvWon"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        tools:text="28" />
+
+    <!-- Drawn (D) -->
+    <TextView
+        android:id="@+id/tvDrawn"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        tools:text="5" />
+
+    <!-- Lost (L) -->
+    <TextView
+        android:id="@+id/tvLost"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        tools:text="5" />
+
+    <!-- Goal Difference (GD) -->
+    <TextView
+        android:id="@+id/tvGD"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        tools:text="+52" />
+
+    <!-- Points (PTS) -->
+    <TextView
+        android:id="@+id/tvPts"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="@color/accent_green"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="89" />
+
+</LinearLayout>
